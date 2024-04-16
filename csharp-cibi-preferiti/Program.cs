@@ -20,7 +20,7 @@ namespace CibiPreferiti
 
             Console.WriteLine("Il cibo preferito è: " + CibiPreferiti[0]);
                 // Per prendere l'ultimo elemento dell'array bisogna prendere la sua lunghezza e diminuire di 1
-                // Per far stampare la stringa bisogna prendere l'array e richiedergli la posizione trovata come ultima
+                // Per far stampare la stringa bisogna prendere l'array e richiedergli il valore dell'ultimo elemento
             Console.WriteLine("Il cibo meno gradito è: " + CibiPreferiti[CibiPreferiti.Length - 1]);
 
                 // troviamo gli elementi al centro della classifica
@@ -29,6 +29,8 @@ namespace CibiPreferiti
             Console.WriteLine("La Prima posizione centrale è: " + CibiPreferiti[posizioneCentrale - 1]);
 
             Console.WriteLine("La Seconda posizione centrale è: " + CibiPreferiti[posizioneCentrale]);
+
+                // Console.ReadKey();
         }
     }
 }
