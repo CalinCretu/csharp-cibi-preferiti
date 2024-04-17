@@ -23,14 +23,15 @@ namespace CibiPreferiti
                 // Per far stampare la stringa bisogna prendere l'array e richiedergli il valore dell'ultimo elemento
             Console.WriteLine("Il cibo meno gradito è: " + CibiPreferiti[CibiPreferiti.Length - 1]);
 
-                // troviamo gli elementi al centro della classifica
+                // trovo gli elementi al centro della classifica
             int posizioneCentrale = CibiPreferiti.Length / 2;
-
-            Console.WriteLine("La Prima posizione centrale è: " + CibiPreferiti[posizioneCentrale - 1]);
-
+                // stampo l'elemento centrale
             Console.WriteLine("La Seconda posizione centrale è: " + CibiPreferiti[posizioneCentrale]);
-
-                // Console.ReadKey();
+            // stampo un secondo elemento centrale nel caso l'array sia composto da un numero pari di elementi
+            if (CibiPreferiti.Length % 2 == 0)
+            {
+                Console.WriteLine("La posizione centrale precedente è: " + CibiPreferiti[posizioneCentrale - 1]);
+            }
         }
     }
 }
